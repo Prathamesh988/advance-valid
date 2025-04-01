@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Validation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+            <small class="form-text text-muted">Enter Firstname, Middlename, Lastname</small>
+        </div>
+
+        <!-- Aadhar Number -->
+        <div class="form-group">
+            <label for="aadhar">Aadhar Number</label>
+            <input type="text" class="form-control" id="aadhar" name="aadhar" placeholder="Enter Aadhar Number" required>
+        </div>
+
+        <!-- Pan Card Number -->
+        <div class="form-group">
+            <label for="pan">Pan Card Number</label>
+            <input type="text" class="form-control" id="pan" name="pan" placeholder="Enter PAN Card Number" required>
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+        </div>
+
+        <!-- Marks of 6 subjects -->
+        <div class="form-group">
+            <label for="marks">Marks of 6 Subjects (Separate by comma)</label>
+            <input type="text" class="form-control" id="marks" name="marks" placeholder="Enter Marks (separate by commas)" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="result" class="mt-3"></div>
+</div>
+
+<script src="validation.js"></script>
+</body>
+</html>
